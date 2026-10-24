@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه اینترنتی ترنج</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header-site">
+        <div class="container header-inner">
+            <a class="brand" href="products.html">
+                ترنج
+            </a>
+            <nav class="main-nav">
+                <a href="products.html">خانه</a>
+                <a class="active" chref="products.html">فروشگاه</a>
+                <a href="#filters">دسته بندی</a>
+                <a href="#footer">درباره ما</a>
+            </nav>
+            <div class="header-left">
+                <a class="cart-link" href="product.html">سبد خرید</a>
+                <a class="login-link" href="register.html">ورود</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container listing">
+        <p class="breadcrumb">خانه/فروشگاه</p>
+        <section class="listing-title">
+            <h1>فروشگاه</h1>
+            <p>محصولات منتخب را با خیال راحت مقایسه و انتخاب کنید.</p>
+        </section>
+        <div class="listing-layout">
+            <aside class="filter-panel" id="filters">
+                <h2>فیلتر محصولات</h2>
+
+                <form action="products.html" method="get">
+                    <fieldset class="filter-group">
+                        <legend>دسته بندی</legend>
+                        <label class="choice">
+                            <input type="checkbox" name="category" value="digital">
+                            <span>دیجیتال و گیت</span>
+                        </label>
+
+                        <label class="choice">
+                            <input type="checkbox" name="category" value="home">
+                            <span>خانه و سبک زندگی</span>
+                        </label>
+                        <label class="choice">
+                            <input type="checkbox" name="category" value="accessory">
+                            <span>لوازم شخصی</span>
+                        </label>
+
+                        <legend>محدوده قیمت</legend>
+                        <label class="choice">
+                            <input type="radio" name="price" value="low">
+                            <span>کمتر از 2 میلیون</span>
+                        </label>
+
+                        <label class="choice">
+                            <input type="radio" name="price" value="mid">
+                            <span>2 تا 5 میلیون</span>
+                        </label>
+
+                        <label class="choice">
+                            <input type="radio" name="price" value="high">
+                            <span>بیشتر از 5 میلیون</span>
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="filter-group">
+                        <legend>امتیاز کاربران</legend>
+                        <label class="choice">
+                            <input type="checkbox" name="rating" value="4">
+                            <span>4 ستاره به بالا</span>
+                        </label>
+                    </fieldset>
+                </form>
+            </aside>
+            <section class="products-area">
+                <form class="search-form" action="products.html" method="get">
+                    <label class="sr-only" for="search">جست و جو در محصولات</label>
+                    <input id="search" type="search" placeholder="جست و جو در محصولات...">
+                </form>
+
+                <div class="listing-toolbar">
+                    <p>نمایش 6 محصول</p>
+                    <label class="sort-lable">
+                        مرتب سازی:
+                        <select name="sort">
+                            <option>پرفروش ترین</option>
+                            <option>بالاترین امتیاز</option>
+                            <option>پرتخفیف ترین ها</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="product-grid">
+                    <article class="product-card">
+                        <a class="product-visual">
+                            <img src="assets/17promax3.jpg" alt="آیفون 18 پرومکس">
+                            <img src="assets/17promax2.jpg" alt="">
+                            <img src="assets/17promax4.jpg" alt="">
+                        </a>
+                        <div class="product-info">
+                            <span class="shipping">ارسال رایگان</span>
+                            <h2><a href="product.html">آیفون 18 پرومکس</a></h2>
+                            <div class="product-meta">
+                                <strong>۳۰۰,۰۰۰,۰۰۰ تومان</strong>
+                                <SPan class="rating">★۴.۸</SPan>
+                            </div>
+                        </div>
+
+                    </article>
+                
+
+                <article class="product-card">
+                    <a class="product-visual">
+                        <img src="assets/camera.2.jpg" alt="دوربین">
+                        <img src="assets/camera.jpg" alt="">
+                        <img src="assets/camera3.jpg" alt="">
+                    </a>
+                    <div class="product-info">
+                        <span class="shipping">ارسال رایگان</span>
+                        <h2><a href="product.html">دوربین عکاسی</a></h2>
+                        <div class="product-meta">
+                            <strong>۲۵,۰۰۰,۰۰۰ تومان</strong>
+                            <span class="rating">★۴.۳</span>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+                    <a class="product-visual" href="product.html">
+                        <img src="assets/eirpad.jpg" alt="ایرپاد">
+                        <img src="assets/eirpad.2.jpg" alt="">
+                        <img src="assets/eirpod3.jpg" alt="">
+                    </a>
+                    <div class="product-info">
+                        <span class="shipping">ارسال رایگان</span>
+                        <h2><a href="">ایرپاد اپل</a></h2>
+                        <div class="product-meta">
+                            <strong>۱۰۵,۰۰۰,۰۰۰ تومان</strong>
+                            <span class="rating">★۴.۵</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <a class="product-visual">
+                        <img src="assets/hedphone.jpg" alt="هدفون">
+                        <img src="assets/hephone.jpg" alt="">
+                    </a>
+                    <div class="product-info">
+                        <span class="shipping">ارسال رایگان</span>
+                        <h2><a href="">هدفون</a></h2>
+                        <div class="product-meta">
+                            <strong>۱۲,۰۰۰,۰۰۰ تومان</strong>
+                            <span class="rating">★۴.۳</span>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+                    <a class="product-visual">
+                        <img src="assets/laptap3.jpg" alt="">
+                        <img src="assets/laptap.jpg" alt="">
+                        <img src="assets/laptap2.jpg" alt="">
+                    </a>
+                    <div class="product-info">
+                        <span class="shipping">ارسال رایگان</span>
+                        <h2><a href="product.html">لپ تاپ</a></h2>
+                        <div class="product-meta">
+                            <strong>۱۹۸,۰۰۰,۰۰۰ تومان</strong>
+                            <span class="rating">★۴.۹</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <a href="" class="product-visual">
+                        <img src="assets/watch.png" alt="">
+                        <img src="assets/watch2.png" alt="">
+                        <img src="assets/watch3.png" alt="">
+                    </a>
+                    <div class="product-info">
+                        <span class="shipping">ارسال رایگان</span>
+                        <h2><a href="">اپل واچ</a></h2>
+                        <div class="product-meta">
+                            <strong>۱۹,۰۰۰,۰۰۰</strong>
+                            <span class="rating">★۵</span>
+                        </div>
+
+                    </div>
+
+                </article>
+                
+            </section>
+           </div>
+    </main>
+     </div>
+
+
+
+    <footer class="site-footer" id="footer">
+        <div class="container" footer-inner>
+            <p>ترنج؛ خرید ساده و مطمئن</p>
+            <nav>
+                <a href="products.html">پشتیبانی</a>
+                <a href="products.html">قوانین و شرایط</a>
+                <a href="products.html">اینستاگرام</a>
+            </nav>
+            <p>© ۱۴۰۵</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
